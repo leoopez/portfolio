@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-primary: #212529;
+    --bg-secundary: #f03e3e;
+
+    --text: #f1f3f5;
+
+    --letters: 29;
+    --speed: 3s;
+    --speed-blink: 750ms;
+}
+
+body {
+    font-family: 'Azeret Mono', sans-serif, monospace;
+    font-size: 62.5%;
+    color:var(--text);
+    background-color: var(--bg-primary);
+}
+
+
+section{
+    height: 100vh;
+}
+
+.grl__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.by-column{
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    position: relative;
+    width: max-content;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3.3rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+h1::before,
+h1::after,
+h2::before,
+h2::after{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+h1::before{
+    background-color: var(--bg-primary);
+    animation: typewriter var(--speed) steps(31) forwards;
+}
+
+h1::after{
+    width: 1ch;
+    background-color: var(--text);
+    height: 100%;
+    animation: 
+        typewriter var(--speed) steps(31) forwards, 
+        disapear var(--speed) forwards;
+}
+
+h2::before{
+    background-color: var(--bg-primary);
+    animation: typewriter var(--speed) steps(27) forwards var(--speed);
+}
+
+h2::after{
+    width: 1ch;
+    height: 100%;
+    animation: 
+        typewriter var(--speed) steps(27) forwards var(--speed), 
+        disapearh2 var(--speed) forwards var(--speed), 
+        stayblink var(--speed-blink) infinite calc(2*var(--speed));
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+
+@keyframes disapear {
+    0% {
+        background-color: var(--text);
+    }
+    
+    99% {
+        background-color: var(--text);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes disapearh2 {
+    0% {
+        background-color: transparent;
+    }
+    
+    1% {
+        background-color: var(--text);
+    }
+
+    100% {
+        background-color: var(--text);
+    }
+}
+
+@keyframes stayblink {
+    to {
+        background-color: transparent;
+    }
+}
+
+
+
