@@ -1,0 +1,139 @@
+@import url("animations.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root{
+    --bg-primary: #212529;
+    --bg-secundary: #f03e3e;
+    --bg-accent: #ffd43b;
+    --text: #ced4da;
+
+    --letters: 29;
+    --speed: 1.5s;
+    --speed-blink: 750ms;
+}
+
+body {
+    font-family: 'Azeret Mono', sans-serif, monospace;
+    font-size: 62.5%;
+    color:var(--text);
+    background-color: black
+}
+
+
+section{
+    height: 100vh;
+}
+
+.grl__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.by-column{
+    flex-direction: column;
+}
+
+.terminal {
+    background-color: var(--bg-primary);
+    /* height: 80vh; */
+    width: 80vw;
+    height: 80vh;
+    border-radius: 1rem;
+    border-bottom: 3px solid white;
+}
+
+.space-parent{
+    height: 100%;
+    width: 100%;
+}
+
+.command {
+    position: relative;
+    width: max-content;
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+.terminal-header {
+    justify-content: start;
+    border-bottom: 3px solid white;
+
+}
+
+.terminal-header > span{
+    margin-left: 10px;
+    font-size: 4vw;
+}
+
+.th-1{
+    color: red;
+}
+
+.th-2{
+    color: yellow;
+}
+
+.th-3 {
+    color: green;
+}
+
+.terminal-content{
+    padding: 1rem;
+}
+
+.name {
+    color: var(--bg-accent);
+}
+
+.vsc {
+    display: grid;
+    grid-template-columns: 3rem 4rem auto;
+    grid-template-rows: 2rem;
+    background-color: wheat;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 1rem;
+}
+
+.firefox {
+    background-color: #FFFFFF;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.ff--header {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.ff-search {
+    background-color: var(--bg-primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.ff {
+    color: orange
+}
+
+.i-s {
+    color: var(--text);
+}
+
+.dis {
+    background-color: #555FEC;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 1rem;
+    padding: 1rem;
+}
