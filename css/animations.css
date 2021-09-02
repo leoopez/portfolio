@@ -20,7 +20,7 @@
 }
 
 .cm-1::before{
-    background-color: var(--bg-primary);
+    background-color: var(--st-dm-ter);
     animation: typewriter var(--speed) steps(31) forwards;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .cm-2::before{
-    background-color: var(--bg-primary);
+    background-color: var(--st-dm-ter);
     animation: typewriter var(--speed) steps(27) forwards var(--speed);
 }
 
@@ -42,7 +42,7 @@
 }
 
 .cm-3::before{
-    background-color: var(--bg-primary);
+    background-color: var(--st-dm-ter);
     animation: typewriter 300ms steps(27) forwards calc(2*var(--speed));
 }
 
@@ -62,11 +62,11 @@
 
 @keyframes disapear {
     0% {
-        background-color: var(--text);
+        background-color: var(--dm-text);
     }
     
     99% {
-        background-color: var(--text);
+        background-color: var(--dm-text);
     }
 
     100% {
@@ -80,11 +80,11 @@
     }
     
     1% {
-        background-color: var(--text);
+        background-color: var(--dm-text);
     }
 
     100% {
-        background-color: var(--text);
+        background-color: var(--dm-text);
     }
 }
 
@@ -95,11 +95,11 @@
     }
     
     1% {
-        background-color: var(--text);
+        background-color: var(--dm-text);
     }
 
     100% {
-        background-color: var(--text);
+        background-color: var(--dm-text);
     }
 }
 

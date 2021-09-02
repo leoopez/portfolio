@@ -1,6 +1,5 @@
 @import url("animations.css");
 
-
 :root{
     /* dark Mode Tons */
     --bg-dm-primary: #495057;
@@ -9,7 +8,7 @@
     --dm-text: #f8f9fa;
     
     --st-dm-ter: #212529;
-    --st-dm-vsc: #494336;
+    --st-dm-vsc: #071e33;
     --st-dm-ff: #33220f;
     --st-dm-dis: #11132f;
 
@@ -33,7 +32,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     color: var(--dm-text)
 }
 
@@ -48,6 +47,14 @@ section{
     height: 100vh;
 }
 
+ul,li {
+    list-style: none;
+}
+
+p, span {
+    font-size: max(1.6em, 1.5vw);
+}
+
 .grl__flex{
     display: flex;
     align-items: center;
@@ -58,6 +65,7 @@ section{
 .grl__grid {
     display: grid;
     padding: 1rem;
+    grid-gap: 1rem;
 }
 
 .section__container {
@@ -70,8 +78,13 @@ section{
 .grl__container {
     padding: 1rem;
 }
+.command {
+    position: relative;
+    width: max-content;
+    font-weight: 400;
+}
 
-.flex__by-column{
+.flex__by--column {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -88,20 +101,10 @@ section{
     border-bottom: var(--border-dm)
 }
 
-.command {
-    position: relative;
-    width: max-content;
-    font-weight: 400;
-    font-size: 3vw;
-}
 
 .ter-header {
     justify-content: start;
     border-bottom: var(--border-dm)
-}
-
-.ter-header > span{
-    font-size: 4vw;
 }
 
 .th-1{
@@ -118,41 +121,4 @@ section{
 
 .name {
     color: var(--bg-dm-accent);
-}
-
-/* Tecnologies (VSC Custom) */
-
-.vsc {
-    grid-template-columns: 3rem 4rem auto;
-    grid-template-rows: 4rem auto;
-    background-color: var(--st-dm-vsc);
-}
-
-.vsc__activity-bar {
-    justify-content: space-between;
-}
-
-.icon__vsc {
-    fill: #007ACC;
-}
-
-/* Projects (FireFox Custom)*/
-.firefox {
-    background-color: var(--st-dm-ff);
-}
-
-.ff__header {
-    justify-content: start;
-}
-
-.ff__icon {
-    color: orange
-}
-
-.dis {
-    background-color: var(--st-dm-dis);
-}
-
-.dis__icon {
-    color: white;
 }
