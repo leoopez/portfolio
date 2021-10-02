@@ -5,20 +5,25 @@ import React from "react";
 import Item from "./UI/Item";
 
 const items = [
-  "Responsive Design",
-  "Functional Programming",
-  "OOP",
-  "Data Structures & Algoritmhs",
+  "HTML",
+  "CSS",
+  "JS",
+  "React",
+  "Redux",
+  "Git",
+  "TypeScript",
+  "Bootstrap",
+  "Tailwindcss",
 ];
 
-export default function Skills() {
+export default function Technologies() {
   return (
     <section id='skills' class='section'>
       <div className='container'>
-        <h2 className='sctn--title'>Skills</h2>
+        <h2 className='sctn--title'>Technologies</h2>
         <div className='flx__ct--center sctn--content'>
-          {items.map((item, id) => (
-            <Item key={id} item={item} />
+          {items.map((item, key) => (
+            <Item key={key} item={item} />
           ))}
         </div>
       </div>
