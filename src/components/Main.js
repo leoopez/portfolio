@@ -13,9 +13,9 @@ export default function Main() {
     <main className='main'>
       <Presentation />
       <Projects />
-      <Technologies />
+      {/*<Technologies />
       <Skills />
-      <Contact />
+      <Contact /> */}
     </main>
   );
 }

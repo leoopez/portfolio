@@ -2,20 +2,9 @@
 
 import React from "react";
 
-import {
-  SiGithub,
-  SiReact,
-  SiRedux,
-  SiSass,
-  SiTypescript,
-  SiMaterialUi,
-  SiTailwindcss,
-  SiFirebase,
-} from "react-icons/si";
-
 export default function Projects() {
   return (
-    <section id='projects' class='section'>
+    <section id='projects' className='section'>
       <div className='container'>
         <h2 className='sctn--title'>Projects</h2>
         <div className='grd__ct prjcts--content'>

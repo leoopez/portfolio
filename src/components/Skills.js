@@ -13,7 +13,7 @@ const items = [
 
 export default function Skills() {
   return (
-    <section id='skills' class='section'>
+    <section id='skills' className='section'>
       <div className='container'>
         <h2 className='sctn--title'>Skills</h2>
         <div className='flx__ct--center sctn--content'>

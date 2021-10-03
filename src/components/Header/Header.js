@@ -2,8 +2,6 @@
 
 import React, { useState } from "react";
 
-import "./Header.css";
-
 import { FaSun, FaMoon, FaBars } from "react-icons/fa";
 
 export default function Header() {
@@ -11,7 +9,7 @@ export default function Header() {
 
   const showSidebar = () => setIsOpen(!isOpen);
   return (
-    <header className='hdr flx__ctn'>
+    <header className='hdr flx__ctn mb-bg'>
       <nav className='nv flx__ctn'>
         <div className='hdr--logo'>LO.</div>
         <ul className='nv__ul--dd'>
@@ -33,6 +31,9 @@ const NavItems = ({ darkMode = false }) => {
     <>
       <li>
         <a className='nv--item'>projects</a>
+      </li>
+      <li>
+        <a className='nv--item'>technologies</a>
       </li>
       <li>
         <a className='nv--item'>skills</a>

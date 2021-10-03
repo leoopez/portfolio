@@ -1,0 +1,31 @@
+
+/* Projects Section */
+
+.prjcts--content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.sbsctn--title {
+    font-weight: 600;
+    font-size:2rem;
+    text-align:center;
+}
+
+.sctn--content {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: min(40rem, 100%);
+    margin: 0 auto;
+}
+
+.prjct--item {
+    padding: 1rem;
+    box-shadow: 0 0 0.1rem 0.1rem;
+}
+
+.prjct__item--p {
+    font-size:1rem;
+    text-align: center;
+}

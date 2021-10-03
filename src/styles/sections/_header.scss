@@ -1,0 +1,106 @@
+
+.hdr {
+    width: 100%;
+    height: 12rem;
+    justify-content: center;
+    font-size: $text-1;
+
+    &--logo {
+        font-size: $text-3;
+        font-weight: 600;
+
+        &:hover {
+            cursor: pointer;
+            color: $lm-text-accent;
+        }
+    }
+}
+
+.nv {
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    font-weight: $weight-5;
+
+    &__ul--md{
+        background-color:#ffec99;
+        justify-content:center;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 12rem;
+        left: -110%;
+        flex-direction: column;
+        transition: left 250ms;
+        box-shadow: 0 0 20px 4px;
+
+        &.open {
+            left: 0;
+        }
+        * {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__ul--dd{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .nv { 
+        max-width: 110rem;
+        
+        &--item {
+            margin-left: 1.5rem;
+            position: relative;
+            padding: 0.2em 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                color: $lm-text-accent;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color:  $lm-text-accent;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: 0.2s;
+            }
+            
+            &:hover::before {
+                transform: scaleX(1);
+            }
+        }
+
+        &--ul{
+            background-color: none;
+            position: block;
+            width: 80%;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        &__ul--md {
+            display: none;
+        }
+        
+        &__ul--dd{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .menu--icon {
+        display: none;
+    }
+}

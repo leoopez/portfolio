@@ -4,7 +4,9 @@
 @import "styles/components";
 @import "styles/utilities";
 
-
+@import "styles/sections/header";
+@import "styles/sections/presentation";
+@import "styles/sections/projects";
 // .container {
 //     padding: 3rem;
 // }
@@ -22,13 +24,6 @@
 
 // .section {
 //     margin-bottom: 2rem;
-// }
-
-// .title {
-//     text-align: center;
-//     font-size: 4rem;
-//     font-weight: 700;
-//     margin-bottom: 3rem;
 // }
 
 // .main {
@@ -54,93 +49,6 @@
 // }
 
 // /* Presentation Section (Terminal Custom) */
-
-// h1 > .name {
-//     font-size: 4rem;
-//     font-weight: 700;
-// }
-
-// .presentation__ctr {
-//     margin: 0 auto;
-//     margin-top: 2em;
-//     font-family: 'Azeret Mono';
-//     font-weight: 900;
-//     width: min(95vw, 50rem);
-//     height: 24rem;
-//     background-color: white;
-//     border-radius: 1rem;
-//     padding: 1rem;
-// }
-
-// .command {
-//     position: relative;
-//     width: max-content;
-//     font-weight: 400;
-// }
-
-// .ter {
-//     background-color: var(--st-dm-ter);
-//     border-bottom: var(--border-dm)
-// }
-
-// .ter-header {
-//     justify-content: start;
-//     border-bottom: var(--border-dm)
-// }
-
-// .th-1{
-//     color: red;
-// }
-
-// .th-2{
-//     color: yellow;
-// }
-
-// .th-3 {
-//     color: green;
-// }
-
-// .name {
-//     color: var(--bg-lm-accent);
-// }
-
-// /* Projects Section */
-
-// .prjcts--content{
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 1rem;
-// }
-
-// .sctn--title {
-//     font-weight: 600;
-//     font-size:2.4rem;
-//     text-align:center;
-//     margin-bottom: 3rem;
-// }
-
-// .sbsctn--title {
-//     font-weight: 600;
-//     font-size:2rem;
-//     text-align:center;
-// }
-
-// .sctn--content {
-//     flex-wrap: wrap;
-//     gap: 1rem;
-//     justify-content: center;
-//     width: min(40rem, 100%);
-//     margin: 0 auto;
-// }
-
-// .prjct--item {
-//     padding: 1rem;
-//     box-shadow: 0 0 0.1rem 0.1rem;
-// }
-
-// .prjct__item--p {
-//     font-size:1rem;
-//     text-align: center;
-// }
 
 // /* Animation */
 

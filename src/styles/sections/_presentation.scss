@@ -1,0 +1,44 @@
+
+.name {
+    color: $lm-text-accent;
+}
+
+.presentation__ctr {
+    font-family: 'Azeret Mono';
+    font-size: $text-4;
+    margin: 0 auto;
+    width: min(95vw, 65rem);
+    height: 30rem;
+    background-color: $lm-bg-secundary;
+    border-radius: $bdr-rds-sm;
+    padding: 1rem;
+}
+
+.command {
+    position: relative;
+    width: max-content;
+    font-weight: 400;
+}
+
+.ter {
+    background-color: var(--st-dm-ter);
+    border-bottom: var(--border-dm)
+}
+
+.ter-header {
+    font-size: $text-5;
+    justify-content: start;
+    border-bottom: $lm-border;
+}
+
+.th-1{
+    color: red;
+}
+
+.th-2{
+    color: yellow;
+}
+
+.th-3 {
+    color: green;
+}
