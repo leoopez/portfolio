@@ -5,25 +5,23 @@ import React from "react";
 export default function Projects() {
   return (
     <section id='projects' className='section'>
-      <div className='container'>
-        <h2 className='sctn--title'>Projects</h2>
-        <div className='grd__ct prjcts--content'>
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
-          <ProjectItem />
-        </div>
+      <h2 className='section--title mb-md'>Projects</h2>
+      <div className='pr__content'>
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
+        <ProjectItem />
       </div>
     </section>
   );
 }
 
-const ProjectItem = () => {
+const ProjectItem = ({ title = "Project", description }) => {
   return (
-    <div className='prjct--item'>
-      <div className='item--content'>
-        <h3 className='sbsctn--title'>Project</h3>
-        <p className='prjct__item--p'>
+    <div className='pr__item box__shadow'>
+      <div className='pr__item--content'>
+        <h3 className='sub__section--title'>{title}</h3>
+        <p className='pr__item--p'>
           The Hugo Award for Best Professional Artist is given each year for
           artists of works related to science fiction or fantasy released in the
           previous calendar year.

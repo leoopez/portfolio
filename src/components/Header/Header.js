@@ -9,7 +9,7 @@ export default function Header() {
 
   const showSidebar = () => setIsOpen(!isOpen);
   return (
-    <header className='hdr flx__ctn mb-bg'>
+    <header className='hdr flx__ctn'>
       <nav className='nv flx__ctn'>
         <div className='hdr--logo'>LO.</div>
         <ul className='nv__ul--dd'>
