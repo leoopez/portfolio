@@ -4,30 +4,31 @@ import React, { useState } from "react";
 
 import "./Header.css";
 
-import { FaBars } from "react-icons/fa";
+import { FaSun, FaMoon, FaBars } from "react-icons/fa";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const showSidebar = () => setIsOpen(!isOpen);
   return (
-    <header className='flx__ct--center hdr'>
-      <nav className='flx__ct--center nv'>
+    <header className='hdr flx__ctn'>
+      <nav className='nv flx__ctn'>
         <div className='hdr--logo'>LO.</div>
         <ul className='nv__ul--dd'>
           <NavItems />
         </ul>
         <span className='menu--icon' onClick={showSidebar}>
-          <FaBars size='2rem' />
+          <FaBars size='3rem' />
         </span>
       </nav>
-      <ul className={`flx__ct--center nv__ul--md ${isOpen ? "open" : ""}`}>
+      <ul className={`nv__ul--md flx__ctn ${isOpen ? "open" : ""}`}>
         <NavItems />
       </ul>
     </header>
   );
 }
 
-const NavItems = () => {
+const NavItems = ({ darkMode = false }) => {
   return (
     <>
       <li>
@@ -40,7 +41,7 @@ const NavItems = () => {
         <a className='nv--item'>contact</a>
       </li>
       <li>
-        <a className='nv--item'>DM</a>
+        <a className='nv--item'>{darkMode ? <FaMoon /> : <FaSun />}</a>
       </li>
     </>
   );

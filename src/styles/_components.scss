@@ -1,0 +1,125 @@
+
+// /* buttons */
+
+// .btn {
+//     font-size: $text-1;
+//     padding: 1rem 1.5rem;
+//     border-radius: $bdr-rds-sm;
+//     border: $lm-bg-secundary solid 3px;
+// }
+
+.hdr {
+    margin: 0 auto;
+    font-size: $text-4;
+    height: 12rem;
+    justify-content: center;
+
+    &--logo {
+        font-size: $text-6;
+        font-weight: 600;
+
+        &:hover {
+            cursor: pointer;
+            color: $lm-text-accent;
+        }
+    }
+}
+
+.nv {
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+
+    &__ul--md{
+        background-color:#ffec99;
+        justify-content:center;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 12rem;
+        left: -110%;
+        flex-direction: column;
+        transition: left 250ms;
+        box-shadow: 0 0 20px 4px;
+
+        * {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__ul--md.open { 
+        left: 0;
+    } 
+
+    &__ul--dd{
+        display: none;
+    }
+    
+}
+
+@media screen  and (min-width: 62rem) {
+    .hdr {
+        height: 8rem;
+        max-width: 65rem;
+        font-size: $text-1;
+
+        &--logo {
+            font-size: $text-4;
+        }
+    }
+    
+    .nv { 
+        
+        &--item {
+            margin-left: 1.5rem;
+            position: relative;
+            padding: 0.5rem 0.8rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                color: $lm-text-accent;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color:  $lm-text-accent;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: 0.2s;
+            }
+            
+            &:hover::before {
+                transform: scaleX(1);
+            }
+        }
+
+        &--ul{
+            background-color: none;
+            position: block;
+            width: 80%;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        &__ul--md {
+            display: none;
+        }
+        
+        &__ul--dd{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .menu--icon {
+        display: none;
+    }
+}
