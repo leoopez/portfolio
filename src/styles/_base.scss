@@ -1,11 +1,12 @@
-html {
-    font-size: 62.5%;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +16,8 @@ body {
 }
 
 ul {
+    list-style-type: none;
+
     li {
         list-style: none;
         
@@ -25,10 +28,17 @@ ul {
 }
 
 h1 {
-    font-size: $text-big;
+    font-size: $text-6;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: $lm-text;
     text-align: center;
+    line-height: 1.2;
+}
+
+.main {
+    max-width: 110rem;
+    width: 95%;
+    margin: 0 auto;
 }

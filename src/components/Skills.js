@@ -6,6 +6,7 @@ import Item from "./UI/Item";
 
 const items = [
   "Responsive Design",
+  "Animations",
   "Functional Programming",
   "OOP",
   "Data Structures",

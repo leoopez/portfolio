@@ -5,7 +5,7 @@ import React from "react";
 export default function Projects() {
   return (
     <section id='projects' className='section'>
-      <h2 className='section--title mb-md'>Projects</h2>
+      <h2 className='section--title mb-bg'>Projects</h2>
       <div className='pr__content'>
         <ProjectItem />
         <ProjectItem />
