@@ -31,5 +31,9 @@
 }
 
 .box__shadow {
-    box-shadow: 0 0 10px 3px;
+    box-shadow: 0 0 10px 3px rgba(black, 0.4);
+}
+
+.box__shadow-sm {
+    box-shadow: 0 0 5px 1px rgba(black, 0.4);
 }

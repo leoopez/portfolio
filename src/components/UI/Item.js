@@ -3,5 +3,5 @@
 import React from "react";
 
 export default function Item({ item }) {
-  return <div className='item'>{item}</div>;
+  return <span className='item box__shadow-sm'>{item}</span>;
 }

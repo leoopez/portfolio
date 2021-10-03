@@ -1,0 +1,9 @@
+.section--content{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: min(100%, 50rem);
+}
