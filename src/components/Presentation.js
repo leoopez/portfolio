@@ -15,9 +15,15 @@ export default function Presentation() {
           <span className='th-3'>&#9679;</span>
         </div>
         <div className='grl__container'>
-          <p className='command cm-1'>&#10095; Welcome to my Porfolio</p>
-          <p className='command cm-2'>&#10095; Front End Engineer</p>
-          <p className='command cm-3'>&#10095; JavaScript Developer</p>
+          <p className='command cm-1'>
+            &#10095; Welcome to my <span className='name'>Porfolio</span>
+          </p>
+          <p className='command cm-2'>
+            &#10095; <span className='name'>Front End</span> Engineer
+          </p>
+          <p className='command cm-3'>
+            &#10095; <span className='name'>JavaScript</span> Developer
+          </p>
         </div>
       </div>
     </section>

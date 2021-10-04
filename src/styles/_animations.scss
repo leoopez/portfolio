@@ -1,0 +1,113 @@
+/* Animation */
+
+.cm-1::before,
+.cm-1::after,
+.cm-2::before,
+.cm-2::after,
+.cm-3::before,
+.cm-3::after{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.cm-1::after,
+.cm-2::after,
+.cm-3::after{
+    width: 1ch;
+    height: 100%;
+}
+
+.cm-1::before{
+    background-color: var(--st-dm-ter);
+    animation: typewriter var(--speed) steps(31) forwards;
+}
+
+.cm-1::after{
+    animation: 
+        typewriter var(--speed) steps(31) forwards, 
+        disapear var(--speed) forwards;
+}
+
+.cm-2::before{
+    background-color: var(--st-dm-ter);
+    animation: typewriter var(--speed) steps(27) forwards var(--speed);
+}
+
+.cm-2::after{
+    animation: 
+        typewriter var(--speed) steps(27) forwards var(--speed), 
+        disapear var(--speed) forwards var(--speed)
+}
+
+.cm-3::before{
+    background-color: var(--st-dm-ter);
+    animation: typewriter 300ms steps(27) forwards calc(2*var(--speed));
+}
+
+.cm-3::after{
+    animation: 
+        typewriter 300ms steps(27) forwards calc(2*var(--speed)), 
+        disapearh2 300ms forwards calc(2*var(--speed)), 
+        stayblink var(--speed-blink) infinite calc(2*var(--speed));
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+
+@keyframes disapear {
+    0% {
+        background-color: var(--dm-text);
+    }
+    
+    99% {
+        background-color: var(--dm-text);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes disapearh2 {
+    0% {
+        background-color: transparent;
+    }
+    
+    1% {
+        background-color: var(--dm-text);
+    }
+
+    100% {
+        background-color: var(--dm-text);
+    }
+}
+
+
+@keyframes disapearh2 {
+    0% {
+        background-color: transparent;
+    }
+    
+    1% {
+        background-color: var(--dm-text);
+    }
+
+    100% {
+        background-color: var(--dm-text);
+    }
+}
+
+@keyframes stayblink {
+    to {
+        background-color: transparent;
+    }
+}
+

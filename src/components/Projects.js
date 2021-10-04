@@ -2,31 +2,33 @@
 
 import React from "react";
 
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
+import { projects } from "../portfolio";
+
 export default function Projects() {
   return (
     <section id='projects' className='section'>
       <h2 className='section--title mb-bg'>Projects</h2>
       <div className='pr__content'>
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
-        <ProjectItem />
+        {projects.map(({ title, description }, id) => (
+          <ProjectItem key={id} title={title} description={description} />
+        ))}
       </div>
     </section>
   );
 }
 
-const ProjectItem = ({ title = "Project", description }) => {
+const ProjectItem = ({ title = "Project", description = "" }) => {
   return (
-    <div className='pr__item box__shadow'>
-      <div className='pr__item--content'>
-        <h3 className='sub__section--title'>{title}</h3>
-        <p className='pr__item--p'>
-          The Hugo Award for Best Professional Artist is given each year for
-          artists of works related to science fiction or fantasy released in the
-          previous calendar year.
-        </p>
-        <div className='flx__ct--center'></div>
+    <div className='pr__card box__shadow'>
+      <div className='pr__card--content'>
+        <h3 className='sub__section--title mb'>{title}</h3>
+        <p className='pr__card--p mb'>{description}</p>
+        <div className='pr__card--links flx__ctn'>
+          <FaGithub size='3rem' />
+          <FaExternalLinkAlt size='3rem' />
+        </div>
       </div>
     </div>
   );

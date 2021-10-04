@@ -8,10 +8,49 @@
         align-items: center;
         justify-content: center;
     }
-    &__item {
+
+    &__card {
         margin: 0 auto;
         width: 28rem;
         height: 28rem;
-        padding: 1rem;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.5s;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            top: 97%;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background-color: $lm-text;
+            transition: top 0.5s;
+            z-index: -1;
+        }
+
+        &:hover::before{
+            top: 0;
+        }
+
+        &:hover {
+            color: $lm-bg-primary
+        }
+
+        &--p{
+            font-size: $text-1;
+        }
+
+        &--links{
+            margin: 0 auto;
+            width: 50%;
+            justify-content: space-evenly;
+
+            & > *{
+                cursor: pointer;
+            }
+        }
     }
 }
