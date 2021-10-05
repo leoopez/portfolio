@@ -55,7 +55,11 @@
             margin-left: 1.5rem;
             position: relative;
             padding: 0.2em 0;
-
+            
+            & > a {
+                color: $lm-text;
+            }
+            
             &:hover {
                 cursor: pointer;
             }

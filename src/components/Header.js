@@ -29,21 +29,24 @@ export default function Header() {
 const NavItems = ({ darkMode = false }) => {
   return (
     <>
-      <li>
-        <a className='nv--item'>projects</a>
-      </li>
-      <li>
-        <a className='nv--item'>technologies</a>
-      </li>
-      <li>
-        <a className='nv--item'>skills</a>
-      </li>
-      <li>
-        <a className='nv--item'>contact</a>
-      </li>
-      <li>
-        <a className='nv--item'>{darkMode ? <FaMoon /> : <FaSun />}</a>
-      </li>
+      <NavItem id='projects' />
+      <NavItem id='technologies' />
+      <NavItem id='skills' />
+      <NavItem id='contact' />
+      <li className='nv--item'> {darkMode ? <FaMoon /> : <FaSun />}</li>
     </>
+  );
+};
+
+const NavItem = ({ id }) => {
+  const onClick = e => {
+    e.preventDefault();
+    console.log(id);
+    document.getElementById(id).scrollIntoView();
+  };
+  return (
+    <li className='nv--item' onClick={onClick}>
+      <a href={id}>{id}</a>
+    </li>
   );
 };
