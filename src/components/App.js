@@ -4,14 +4,14 @@ import React from "react";
 
 import Header from "./Header";
 import Main from "./Main";
-import Footer from "./Footer";
+import BackTop from "./UI/BackTop";
 
 export default function App() {
   return (
-    <>
+    <div id='root'>
       <Header />
       <Main />
-      <Footer />
-    </>
+      <BackTop />
+    </div>
   );
 }

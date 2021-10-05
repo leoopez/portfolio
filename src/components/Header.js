@@ -10,7 +10,7 @@ export default function Header() {
   const showSidebar = () => setIsOpen(!isOpen);
   return (
     <header className='hdr flx__ctn'>
-      <nav className='nv flx__ctn'>
+      <nav id='header' className='nv flx__ctn'>
         <div className='hdr--logo'>LO.</div>
         <ul className='nv__ul--dd'>
           <NavItems />
@@ -33,7 +33,10 @@ const NavItems = ({ darkMode = false }) => {
       <NavItem id='technologies' />
       <NavItem id='skills' />
       <NavItem id='contact' />
-      <li className='nv--item'> {darkMode ? <FaMoon /> : <FaSun />}</li>
+      <li className='nv--item'>
+        {" "}
+        {darkMode ? <FaMoon size='3rem' /> : <FaSun size='3rem' />}
+      </li>
     </>
   );
 };

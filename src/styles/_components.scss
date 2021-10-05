@@ -87,3 +87,15 @@
         }
     }
 }
+
+.back__top {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    justify-content: center;
+    box-shadow: 0 0 10rem 1rem;
+    background-color: $lm-bg-primary;
+    border-radius: 50%;
+}
