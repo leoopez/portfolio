@@ -24,7 +24,7 @@ const ProjectItem = ({ title = "Project", description = "" }) => {
     <div className='pr__card box__shadow'>
       <div className='pr__card--content'>
         <h3 className='sub__section--title mb'>{title}</h3>
-        <p className='pr__card--p mb'>{description}</p>
+        <p className='pr__card--p mb'>{description.en}</p>
         <div className='pr__card--links flx__ctn'>
           <FaGithub size='3rem' />
           <FaExternalLinkAlt size='3rem' />

@@ -13,20 +13,20 @@ export default function Header() {
       <nav id='header' className='nv flx__ctn'>
         <div className='hdr--logo'>LO.</div>
         <ul className='nv__ul--dd'>
-          <NavItems />
+          <Navbar />
         </ul>
         <span className='menu--icon' onClick={showSidebar}>
           <FaBars size='3rem' />
         </span>
       </nav>
       <ul className={`nv__ul--md flx__ctn ${isOpen ? "open" : ""}`}>
-        <NavItems />
+        <Navbar />
       </ul>
     </header>
   );
 }
 
-const NavItems = ({ darkMode = false }) => {
+const Navbar = ({ darkMode = false, langMode = false }) => {
   return (
     <>
       <NavItem id='projects' />
@@ -34,9 +34,9 @@ const NavItems = ({ darkMode = false }) => {
       <NavItem id='skills' />
       <NavItem id='contact' />
       <li className='nv--item'>
-        {" "}
         {darkMode ? <FaMoon size='3rem' /> : <FaSun size='3rem' />}
       </li>
+      <li className='nv--item'>{langMode ? "ES " : "EN"}</li>
     </>
   );
 };

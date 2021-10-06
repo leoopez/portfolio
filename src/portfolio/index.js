@@ -1,30 +1,47 @@
 /** @format */
 
+export const navbar = {
+  en: ["projects", "technologies", "skills", "contact"],
+  es: ["projectos", "tecnologias", "habilidades", "contacto"],
+};
+
 export const projects = [
   {
     title: "Shiess",
-    description: "Application that saves your best chess games online",
+    description: {
+      en: "Application that saves your best chess games online",
+      es: "Aplicación que guarda tus mejores partidas de ajedrez online",
+    },
     tecnologies: ["React", "Redux", "Tailwindcss"],
     github: "",
     deploy: "",
   },
   {
     title: "RoadMapUpiita",
-    description: "Road map of careers taught by the upiita",
+    description: {
+      en: "Road map of careers taught by the upiita",
+      es: "Ruta recomendada de carreras impartidas por la upiita",
+    },
     tecnologies: ["React"],
     github: "",
     deploy: "",
   },
   {
     title: "Lol-Champs",
-    description: "General information champion's in League of Legends",
+    description: {
+      en: "General information champion's in League of Legends",
+      es: "Campeones de información general en League of Legends",
+    },
     tecnologies: ["React", "Tailwindcss"],
     github: "",
     deploy: "",
   },
   {
     title: "Portfolio",
-    description: "Personal Portofolio",
+    description: {
+      en: "Personal Portofolio",
+      es: "Portafolio Personal",
+    },
     tecnologies: ["React", "Webpack", "Sass"],
     github: "",
     deploy: "",
