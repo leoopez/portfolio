@@ -2,7 +2,7 @@
 
 export const navbar = {
   en: ["projects", "technologies", "skills", "contact"],
-  es: ["projectos", "tecnologias", "habilidades", "contacto"],
+  es: ["proyectos", "tecnologías", "habilidades", "contacto"],
 };
 
 export const projects = [

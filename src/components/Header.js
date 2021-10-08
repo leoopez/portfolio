@@ -4,10 +4,15 @@ import React, { useState } from "react";
 
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 
+import { useTheme } from "../context/theme";
+import { useLanguage } from "../context/language";
+
+import { navbar } from "../portfolio";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const darkMode = false;
-  const langMode = false;
+  const { theme, toggleTheme } = useTheme();
+  const { lan, toggleLan } = useLanguage();
 
   const showSidebar = () => setIsOpen(!isOpen);
   return (
@@ -15,15 +20,16 @@ export default function Header() {
       <Navbar>
         <span className='hdr--logo'>LO.</span>
         <ul className='nv--dd'>
-          <NavItem id='projects' />
-          <NavItem id='technologies' />
-          <NavItem id='skills' />
-          <NavItem id='contact' />
+          {navbar[lan ? "en" : "es"].map(p => (
+            <NavItem key={p} id={p} />
+          ))}
         </ul>
         <div className='nv--opt'>
-          <div className='nv--lg'>{langMode ? "ES " : "EN"}</div>
-          <span>
-            {darkMode ? <FaMoon size='3rem' /> : <FaSun size='3rem' />}
+          <div className='nv--lg' onClick={toggleLan}>
+            {lan ? "EN " : "ES"}
+          </div>
+          <span onClick={toggleTheme}>
+            {theme ? <FaMoon size='3rem' /> : <FaSun size='3rem' />}
           </span>
           <span className='menu--icon' onClick={showSidebar}>
             <FaBars size='3rem' />
@@ -34,10 +40,9 @@ export default function Header() {
         <span className='close--icon' onClick={showSidebar}>
           <FaTimes size='3rem' />
         </span>
-        <NavItem id='projects' onClick={showSidebar} />
-        <NavItem id='technologies' onClick={showSidebar} />
-        <NavItem id='skills' onClick={showSidebar} />
-        <NavItem id='contact' onClick={showSidebar} />
+        {navbar[lan ? "en" : "es"].map(p => (
+          <NavItem key={p} id={p} onClick={showSidebar} />
+        ))}
       </ul>
     </header>
   );

@@ -6,4 +6,14 @@ import { render } from "react-dom";
 import App from "./components/App";
 import "./index.scss";
 
-render(<App />, document.getElementById("root"));
+import ThemeProvider from "./context/theme";
+import LanguageProvider from "./context/language";
+
+render(
+  <ThemeProvider>
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
+  </ThemeProvider>,
+  document.getElementById("root")
+);

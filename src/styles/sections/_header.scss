@@ -1,18 +1,18 @@
 
 .hdr {
     @include flex--ctn;
-    font-size: $text-2;
+    font-size: $text-1;
     height: 12rem;
     justify-content: center;
 
     &--logo {
         font-weight: $weight-7;
         font-size: $text-6;
-        color: $lm-text-accent;
+        color: var(--text-accent);
 
         &:hover {
             cursor: pointer;
-            color: $lm-text;
+            color:  var(--text);
         }
     }
 }
@@ -26,12 +26,12 @@
 
     &--item {
         & > a {
-            color: $lm-text;
+            color:  var(--text);
         }
     }
 
     &--md{
-        background-color:$lm-bg-secundary;
+        background-color: var(--bg-secundary);
         justify-content:center;
         position: fixed;
         width: 100%;
@@ -73,7 +73,10 @@
     right: 5rem;
 }
 
-@media screen and (min-width: 37.5em) { // 600px
+@media screen and (min-width: 40em) { // 600px
+    .hdr {
+        height: 8rem;
+    }
     .nv { 
         max-width: 110rem;
 
@@ -87,7 +90,7 @@
             }
 
             &:active {
-                color: $lm-text-accent;
+                color:  var(--text-accent);
             }
 
             &::before {
@@ -97,7 +100,7 @@
                 left: 0;
                 width: 100%;
                 height: 2px;
-                background-color:  $lm-text-accent;
+                background-color:   var(--text-accent);
                 transform: scaleX(0);
                 transform-origin: left;
                 transition: 0.2s;

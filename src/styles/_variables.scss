@@ -30,21 +30,14 @@ $zindex-2: 1000;
 $zindex-3: 100;
 $zindex-4: 10;
 $zindex-5: 1;
-/* Tons Dark Mode */
 
-$dm-bg-primary: #343a40;
-$dm-bg-secundary: #212529;
-$dm-text: #f8f9fa;
-$bg-dm-accent: #f59f00;
-$dm-border: 3px solid#f1f3f5;
 
-/* Tones Lght Mode */
+$bg-primary: #f1f3f5;
+$bg-secundary: #f8f9fa;
+$text: #343a40;
+$text-accent: #f08c00;
+$border: 3px solid #343a40;
 
-$lm-bg-primary: #f1f3f5;
-$lm-bg-secundary: #f8f9fa;
-$lm-text: #343a40;
-$lm-text-accent: #f08c00;
-$lm-border: 3px solid #343a40;
 
 $letters: 29;
 $speed: 1.5s;

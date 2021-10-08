@@ -6,10 +6,12 @@ import Header from "./Header";
 import Main from "./Main";
 import BackTop from "./UI/BackTop";
 
+import { useTheme } from "../context/theme";
+
 export default function App() {
-  const [theme, setTheme] = useState(false);
+  const { theme } = useTheme();
   return (
-    <div id='root' className={theme ? "light" : "dark"}>
+    <div className={theme ? "app dark" : "app"}>
       <Header />
       <Main />
       <BackTop />
