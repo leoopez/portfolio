@@ -1,16 +1,13 @@
 .section--title {
     font-weight: $weight-7;
-    font-size: $text-4;
 }
 
 .sub__section--title {
     font-weight: $weight-6;
-    font-size: $text-2;
 }
 
 .item {
     color: $lm-text;
-    font-size: $text-1;
     display: inline-block;
     padding: 1rem 1.5rem;
     letter-spacing: 3px;
@@ -58,7 +55,6 @@
     position: relative;
     padding: 1.5rem 3rem;
     color: $lm-text-accent;
-    font-size: 2rem;
     letter-spacing: 3px;
     border: 3px solid $lm-text-accent;
     text-transform: uppercase;
@@ -92,10 +88,11 @@
     width: 4rem;
     height: 4rem;
     position: fixed;
+    cursor: pointer;
     top: 50%;
     right: 5rem;
     justify-content: center;
-    box-shadow: 0 0 10rem 1rem;
+    box-shadow: 0 0 3px 1px;
     background-color: $lm-bg-primary;
     border-radius: 50%;
 }

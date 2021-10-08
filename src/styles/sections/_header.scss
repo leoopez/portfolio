@@ -1,38 +1,46 @@
 
 .hdr {
-    width: 100%;
+    @include flex--ctn;
+    font-size: $text-2;
     height: 12rem;
     justify-content: center;
-    font-size: $text-1;
 
     &--logo {
-        font-size: $text-3;
-        font-weight: 600;
+        font-weight: $weight-7;
+        font-size: $text-6;
+        color: $lm-text-accent;
 
         &:hover {
             cursor: pointer;
-            color: $lm-text-accent;
+            color: $lm-text;
         }
     }
 }
 
 .nv {
+    @include flex--ctn;
     justify-content: space-between;
     position: relative;
     width: 90%;
     font-weight: $weight-5;
 
-    &__ul--md{
-        background-color:#ffec99;
+    &--item {
+        & > a {
+            color: $lm-text;
+        }
+    }
+
+    &--md{
+        background-color:$lm-bg-secundary;
         justify-content:center;
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: 100vh;
-        top: 12rem;
+        height: 100%;
+        top: 0;
         left: -110%;
         flex-direction: column;
         transition: left 250ms;
-        box-shadow: 0 0 20px 4px;
+        z-index: $zindex-1;
 
         &.open {
             left: 0;
@@ -42,24 +50,37 @@
         }
     }
 
-    &__ul--dd{
+    &--dd{
         display: none;
+    }
+
+    &--opt {
+        @include flex--ctn;
+        & > * {
+            cursor: pointer;
+        }
+    }
+
+    &--lg {
+        font-size: $text-4;
+        font-weight: $weight-7;
     }
 }
 
-@media screen and (min-width: 80em) {
+.close--icon {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+
+@media screen and (min-width: 37.5em) { // 600px
     .nv { 
         max-width: 110rem;
-        
+
         &--item {
             margin-left: 1.5rem;
             position: relative;
             padding: 0.2em 0;
-            font-size: $text-2;
-            
-            & > a {
-                color: $lm-text;
-            }
             
             &:hover {
                 cursor: pointer;
@@ -95,13 +116,12 @@
             justify-content: space-between;
         }
 
-        &__ul--md {
+        &--md {
             display: none;
         }
         
-        &__ul--dd{
-            display: flex;
-            align-items: center;
+        &--dd{
+            @include flex--ctn;
         }
     }
 

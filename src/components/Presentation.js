@@ -5,7 +5,7 @@ import React from "react";
 export default function Presentation() {
   return (
     <section id='presentation' className='section'>
-      <h1 className='mb-bg'>
+      <h1>
         Hi, I am <span className='name'>Leonardo Ortiz</span>
       </h1>
       <div className='presentation__ctr box__shadow '>

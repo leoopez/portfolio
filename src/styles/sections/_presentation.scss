@@ -3,15 +3,21 @@
     color: $lm-text-accent;
 }
 
-.presentation__ctr {
-    font-family: 'Azeret Mono';
-    font-size: $text-2;
-    margin: 0 auto;
-    width: min(95vw, 65rem);
-    height: 30rem;
-    background-color: $lm-bg-secundary;
-    border-radius: $bdr-rds-sm;
-    padding: 1rem;
+#presentation{
+    height: calc(100vh - $header-height);
+}
+
+.presentation {
+    &__ctr{
+
+        font-family: 'Azeret Mono';
+        margin: 0 auto;
+        width: min(95vw, 65rem);
+        height: 30rem;
+        background-color: $lm-bg-secundary;
+        border-radius: $bdr-rds-sm;
+        padding: 1rem;
+    }
 }
 
 .command {
@@ -26,7 +32,6 @@
 }
 
 .ter-header {
-    font-size: $text-5;
     justify-content: start;
     border-bottom: $lm-border;
 }

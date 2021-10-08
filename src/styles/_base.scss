@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     color: $lm-text;
+    font-size: $text-1;
     background-color: $lm-bg-primary;
 }
 
@@ -28,7 +29,8 @@ ul {
 }
 
 h1 {
-    font-size: $text-6;
+    font-size: $text-5;
+    margin-bottom: $mb-bg;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,8 +38,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
-.main {
-    max-width: 110rem;
-    width: 95%;
-    margin: 0 auto;
+span {
+    display: inline-block;
+}
+
+@media screen  and (min-width: 37.5em) {
+    .main {
+        max-width: 110rem;
+        width: 95%;
+        margin: 0 auto;
+    }
 }

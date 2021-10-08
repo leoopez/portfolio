@@ -1,7 +1,12 @@
 
 .section {
     max-width: 100rem;
-    margin: 10rem auto;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* flex container */
