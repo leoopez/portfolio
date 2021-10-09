@@ -9,10 +9,9 @@
 
 .presentation {
     &__ctr{
-
         font-family: 'Azeret Mono';
         margin: 0 auto;
-        width: min(95vw, 65rem);
+        width: min(95vw, 30rem);
         height: 30rem;
         background-color:  var(--bg-secundary);
         border-radius: $bdr-rds-sm;
@@ -156,3 +155,10 @@
     }
 }
 
+@media screen  and (min-width: 40em) {
+    .presentation {
+        &__ctr{
+            width: 65rem;
+        }
+   }
+}

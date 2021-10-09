@@ -3,7 +3,6 @@
 .pr{
     &__content {
         display: grid;
-        // grid-template-columns: repeat(3, 1fr);
         grid-gap: 3rem;
         align-items: center;
         justify-content: center;
@@ -49,4 +48,20 @@
             }
         }
     }
+}
+
+@media screen  and (min-width: 40em) {
+    .pr {
+       &__content {
+        grid-template-columns: repeat(2, 1fr);
+       }
+    }
+   }
+
+@media screen  and (min-width: 62.5em) {
+ .pr {
+    &__content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }
 }
