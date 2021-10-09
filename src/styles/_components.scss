@@ -1,9 +1,11 @@
 .section--title {
     font-weight: $weight-7;
+    font-size: $text-6;
 }
 
 .sub__section--title {
     font-weight: $weight-6;
+    font-size: $text-3;
 }
 
 .item {
@@ -86,14 +88,23 @@
 }
 
 .back__top {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     position: fixed;
     cursor: pointer;
-    top: 50%;
-    right: 5rem;
+    top: 10%;
+    left: 5rem;
     justify-content: center;
     box-shadow: 0 0 3px 1px;
     background-color:  var(--bg-primary);
     border-radius: 50%;
 }
+
+@media screen  and (min-width: 40em) {
+    .back__top {
+        width: 4rem;
+        height: 4rem;
+        top: 50%;
+        left: calc(100vw - 10rem);
+    }
+   }

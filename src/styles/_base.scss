@@ -59,6 +59,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
+h1{
+    font-size: $text-6;
+}
 
 @media screen  and (min-width: 45em) {
 

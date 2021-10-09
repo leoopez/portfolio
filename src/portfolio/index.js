@@ -1,8 +1,8 @@
 /** @format */
 
 export const navbar = {
-  en: ["projects", "technologies", "skills", "contact"],
-  es: ["proyectos", "tecnologías", "habilidades", "contacto"],
+  en: ["Projects", "Technologies", "Skills", "Contact"],
+  es: ["Proyectos", "Tecnologías", "Habilidades", "Contacto"],
 };
 
 export const projects = [
@@ -47,3 +47,22 @@ export const projects = [
     deploy: "",
   },
 ];
+
+export const presentation = {
+  en: {
+    title: " Hi, I am",
+    commands: [
+      "Welcome to my Porfolio",
+      "Front End Engineer",
+      "JavaScript Developer",
+    ],
+  },
+  es: {
+    title: " Hola, soy",
+    commands: [
+      "Bienvenido a mi portafolio",
+      "Ingeniero Front End",
+      "Desarrollador JavaScript",
+    ],
+  },
+};

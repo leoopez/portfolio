@@ -25,7 +25,7 @@ export default function BackTop() {
 
   return show ? (
     <span className='icon back__top flx__ctn' onClick={onClick}>
-      <FaArrowUp size='3rem' />
+      <FaArrowUp size='2rem' />
     </span>
   ) : null;
 }

@@ -1,12 +1,15 @@
 /** @format */
 
 import React from "react";
+import { useLanguage } from "../context/language";
 
 export default function Presentation() {
+  const { lan } = useLanguage();
   return (
     <section id='presentation' className='section'>
       <h1>
-        Hi, I am <span className='name'>Leonardo Ortiz</span>
+        {lan ? "Hi, i am " : "Hola, soy "}
+        <span className='name'>Leonardo Ortiz</span>
       </h1>
       <div className='presentation__ctr box__shadow '>
         <div className='ter-header mb-md'>
@@ -16,7 +19,8 @@ export default function Presentation() {
         </div>
         <div className='grl__container'>
           <p className='command cm-1'>
-            &#10095; Welcome to my <span className='name'>Porfolio</span>
+            &#10095; {lan ? "Welcome to my  " : "Bienvenido a mi "}
+            <span className='name'>{lan ? "Portfolio" : "Portafolio"}</span>
           </p>
           <p className='command cm-2'>
             &#10095; <span className='name'>Front End</span> Engineer
