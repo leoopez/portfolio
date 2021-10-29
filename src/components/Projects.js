@@ -13,11 +13,12 @@ export default function Projects() {
     <section id={lan ? "Projects" : "Proyectos"} className='section'>
       <h2 className='section--title mb-bg'>{lan ? "Projects" : "Proyectos"}</h2>
       <div className='pr__content'>
-        {projects.map(({ title, description }, id) => (
+        {projects.map(({ title, description, github }, id) => (
           <ProjectItem
             key={id}
             title={title}
             description={description[lan ? "en" : "es"]}
+            github={github}
           />
         ))}
       </div>
@@ -25,17 +26,24 @@ export default function Projects() {
   );
 }
 
-const ProjectItem = ({ title = "Project", description = "" }) => {
+const ProjectItem = ({ title = "Project", description = "", github }) => {
+  console.log(github);
   return (
     <div className='pr__card box__shadow'>
       <div className='pr__card--content'>
         <h3 className='sub__section--title mb'>{title}</h3>
         <p className='pr__card--p mb'>{description}</p>
         <div className='pr__card--links flx__ctn'>
-          <FaGithub size='3rem' />
-          <FaExternalLinkAlt size='3rem' />
+          <a target='_blank' href={github}>
+            <FaGithub size='3rem' />
+          </a>
+          <a>
+            <FaExternalLinkAlt size='3rem' />
+          </a>
         </div>
       </div>
     </div>
   );
 };
+
+const ExternalLink = {};

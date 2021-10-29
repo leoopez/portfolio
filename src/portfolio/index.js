@@ -7,33 +7,13 @@ export const navbar = {
 
 export const projects = [
   {
-    title: "Shiess",
-    description: {
-      en: "Application that saves your best chess games online",
-      es: "Aplicación que guarda tus mejores partidas de ajedrez online",
-    },
-    tecnologies: ["React", "Redux", "Tailwindcss"],
-    github: "",
-    deploy: "",
-  },
-  {
     title: "RoadMapUpiita",
     description: {
       en: "Road map of careers taught by the upiita",
       es: "Ruta recomendada de carreras impartidas por la upiita",
     },
     tecnologies: ["React"],
-    github: "",
-    deploy: "",
-  },
-  {
-    title: "Lol-Champs",
-    description: {
-      en: "General information champion's in League of Legends",
-      es: "Campeones de información general en League of Legends",
-    },
-    tecnologies: ["React", "Tailwindcss"],
-    github: "",
+    github: "https://github.com/leoopez/RoadMapUpiita",
     deploy: "",
   },
   {
@@ -43,7 +23,27 @@ export const projects = [
       es: "Portafolio Personal",
     },
     tecnologies: ["React", "Webpack", "Sass"],
-    github: "",
+    github: "https://github.com/leoopez/leoopez.github.io",
+    deploy: "",
+  },
+  {
+    title: "Shiess",
+    description: {
+      en: "Application that saves your best chess games online",
+      es: "Aplicación que guarda tus mejores partidas de ajedrez online",
+    },
+    tecnologies: ["React", "Redux", "Tailwindcss"],
+    github: "https://github.com/leoopez/shiess",
+    deploy: "",
+  },
+  {
+    title: "Lol-Champs",
+    description: {
+      en: "General information champion's in League of Legends",
+      es: "Campeones de información general en League of Legends",
+    },
+    tecnologies: ["React", "Tailwindcss"],
+    github: "https://github.com/leoopez/lol-champs-info",
     deploy: "",
   },
 ];

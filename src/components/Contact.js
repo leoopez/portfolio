@@ -7,7 +7,7 @@ import Button from "./UI/Button";
 
 export default function Contact() {
   const { lan } = useLanguage();
-  const [emailForm, setEmai]
+  // const [emailForm, setEmai]
   return (
     <section id={lan ? "Contact" : "Contacto"} className='section'>
       <div className='container'>
@@ -21,6 +21,4 @@ export default function Contact() {
       </div>
     </section>
   );
-
-
 }
