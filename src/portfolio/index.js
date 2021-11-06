@@ -14,7 +14,7 @@ export const projects = [
     },
     tecnologies: ["React"],
     github: "https://github.com/leoopez/RoadMapUpiita",
-    deploy: "",
+    deploy: "https://roadmapupiiita.netlify.app",
   },
   {
     title: "Portfolio",
@@ -24,7 +24,7 @@ export const projects = [
     },
     tecnologies: ["React", "Webpack", "Sass"],
     github: "https://github.com/leoopez/leoopez.github.io",
-    deploy: "",
+    deploy: "https://leoocode.netlify.app/",
   },
   {
     title: "Shiess",

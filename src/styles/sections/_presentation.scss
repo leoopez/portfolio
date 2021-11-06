@@ -28,6 +28,10 @@
 .ter-header {
     justify-content: start;
     border-bottom:  var(--border);
+
+    & > * {
+        font-size: 3rem;
+    }
 }
 
 .th-1{

@@ -12,7 +12,7 @@ const GITHUB_URL = "https://github.com/leoopez";
 
 export default function Contact() {
   const { lan } = useLanguage();
-  // const [emailForm, setEmai]
+  // const [emailForm, setEmai];
   return (
     <section id={lan ? "Contact" : "Contacto"} className='section'>
       <div className='container'>
@@ -33,3 +33,5 @@ export default function Contact() {
     </section>
   );
 }
+
+const EmailModal = ({ closeModal }) => {};

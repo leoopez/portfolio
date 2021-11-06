@@ -13,12 +13,13 @@ export default function Projects() {
     <section id={lan ? "Projects" : "Proyectos"} className='section'>
       <h2 className='section--title mb-bg'>{lan ? "Projects" : "Proyectos"}</h2>
       <div className='pr__content'>
-        {projects.map(({ title, description, github }, id) => (
+        {projects.map(({ title, description, github, deploy }, id) => (
           <ProjectItem
             key={id}
             title={title}
             description={description[lan ? "en" : "es"]}
             github={github}
+            deploy={deploy}
           />
         ))}
       </div>
@@ -26,7 +27,12 @@ export default function Projects() {
   );
 }
 
-const ProjectItem = ({ title = "Project", description = "", github }) => {
+const ProjectItem = ({
+  title = "Project",
+  description = "",
+  github,
+  deploy,
+}) => {
   console.log(github);
   return (
     <div className='pr__card box__shadow'>
@@ -37,7 +43,7 @@ const ProjectItem = ({ title = "Project", description = "", github }) => {
           <a target='_blank' href={github}>
             <FaGithub size='3rem' />
           </a>
-          <a>
+          <a target='_blank' href={deploy}>
             <FaExternalLinkAlt size='3rem' />
           </a>
         </div>
