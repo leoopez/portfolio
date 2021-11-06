@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useLanguage } from "../context/language";
+import { useInput } from "../hooks/useInput";
 
 import Button from "./UI/Button";
 
@@ -12,16 +13,14 @@ const GITHUB_URL = "https://github.com/leoopez";
 
 export default function Contact() {
   const { lan } = useLanguage();
-  // const [emailForm, setEmai];
   return (
     <section id={lan ? "Contact" : "Contacto"} className='section'>
       <div className='container'>
         <h2 className='section--title mb'>{lan ? "Contact" : "Contacto"}</h2>
         <div className='section--content'>
-          <Button
-            name={lan ? "email me" : "envíeme un correo"}
-            className='center'
-          />
+          <a className='btn center' href='mailto:leoocode@gmail.com'>
+            {lan ? "email me" : "envíeme un correo"}
+          </a>
           <a target='_blank' href={LINKEDIN_URL}>
             <FaLinkedin size='4rem' />
           </a>
@@ -33,5 +32,3 @@ export default function Contact() {
     </section>
   );
 }
-
-const EmailModal = ({ closeModal }) => {};
