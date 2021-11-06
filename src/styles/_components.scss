@@ -8,6 +8,10 @@
     font-size: $text-3;
 }
 
+.click:focus{
+    outline:0 !important;
+}
+
 .item {
     color:  var(--text);
     display: inline-block;

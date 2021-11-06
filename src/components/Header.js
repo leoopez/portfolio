@@ -25,19 +25,19 @@ export default function Header() {
           ))}
         </ul>
         <div className='nv--opt'>
-          <div className='nv--lg' onClick={toggleLan}>
+          <div className='nv--lg click' onClick={toggleLan}>
             {lan ? "EN " : "ES"}
           </div>
-          <span onClick={toggleTheme}>
+          <span className='click' onClick={toggleTheme}>
             {theme ? <FaMoon size='3rem' /> : <FaSun size='3rem' />}
           </span>
-          <span className='menu--icon' onClick={showSidebar}>
+          <span className='menu--icon click' onClick={showSidebar}>
             <FaBars size='3rem' />
           </span>
         </div>
       </Navbar>
       <ul className={`nv--md flx__ctn ${isOpen ? "open" : ""}`}>
-        <span className='close--icon' onClick={showSidebar}>
+        <span className='close--icon click' onClick={showSidebar}>
           <FaTimes size='3rem' />
         </span>
         {navbar[lan ? "en" : "es"].map(p => (
@@ -66,7 +66,9 @@ const NavItem = ({ id, onClick = f => f }) => {
         scrollIntoView(e);
         onClick();
       }}>
-      <a href={id}>{id}</a>
+      <a className='click' href={id}>
+        {id}
+      </a>
     </li>
   );
 };

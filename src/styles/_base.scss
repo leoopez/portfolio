@@ -16,6 +16,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -56,6 +57,7 @@ h1 {
 
 a:focus, button:focus {
     outline:0;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
