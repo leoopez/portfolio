@@ -34,7 +34,7 @@ export const projects = [
     },
     tecnologies: ["React", "Redux", "Tailwindcss"],
     github: "https://github.com/leoopez/shiess",
-    deploy: "",
+    deploy: "https://shiess.netlify.app/",
   },
   {
     title: "Lol-Champs",
@@ -44,7 +44,7 @@ export const projects = [
     },
     tecnologies: ["React", "Tailwindcss"],
     github: "https://github.com/leoopez/lol-champs-info",
-    deploy: "",
+    deploy: "https://lol-champs.netlify.app/",
   },
 ];
 
