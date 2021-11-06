@@ -51,7 +51,11 @@ ul {
 
 h1 {
     font-size: $text-5;
-    margin-bottom: $mb-bg;
+    margin-bottom: $mb-bg;  
+}
+
+a:focus, button:focus {
+    outline:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
